@@ -1813,9 +1813,11 @@ aside#right-side-menu #main-notifications .card-content .notification.pink-notif
 }
 
 @media only screen and (max-width: 910px) {
-    aside#left-side-menu, #main-menu nav ul.right {
-        display: none;
+    aside, #main-menu nav ul.right {
+        display: block; /* Coloco display block para que se vea el contenido, antes tenia display:none,
+        lo cual oculta el contenido */ 
     }
+
 
     #main-menu nav .button-collapse {
         display: block;
@@ -2370,4 +2372,13 @@ h5 .info {
 
 .strikethrough {
     text-decoration: line-through;
+}
+
+
+/*MEDIA QUERIE PARA OCULTAR EL SPAN */
+
+@media screen and (max-width:575px) {
+.ocultar{
+display:block;
+  }
 }
