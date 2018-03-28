@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Familia</title>
+    <link rel="shortcut icon" type="image/png" href="../../images/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="../../css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/fonts.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="main-menu" class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <div class="container4">
+                        <ul class="right">
+                            <li>
+                                <a class="dropdown-button-custom" href="javascript:void(0)" data-activates="dropdown1">
+                                    <i class="material-icons left">perm_identity</i>
+                                    <i class="material-icons right">arrow_drop_down</i>
+                                </a>
+                                <ul id="dropdown1" class="dropdown-content">
+                                    <li><span>V-26895366</span></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Cambiar contraseña</a></li>
+                                    <li><a href="#">Salir</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="right">
+                            <li class="">
+                                <a href="../../inicio/noticias.html" title="Inicio">
+                                    <i class="material-icons">dashboard</i>
+                                    <span class="hide-on-small-only">Inicio</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../../pagos/historial.html" title="Pagos">
+                                    <i class="material-icons">monetization_on</i>
+                                    <span class="hide-on-small-only">Pagos</span>
+                                </a>
+                            </li>
+                                <li class="active">
+                                    <a href="../familia.html" title="Familia">
+                                        <i class="material-icons">group</i>
+                                        <span class="hide-on-small-only">Familia</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" title="Perfil">
+                                        <i class="material-icons">account_circle</i>
+                                        <span class="hide-on-small-only">Perfil</span>
+                                    </a>
+                                </li>
+                        </ul>
+                        
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="side-nav fixed" id="mobile-menu">
+            <ul id="actions-menu" class="collapsible collapsible-accordion">
+
+                <li class="menu-header">
+                </li>
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img class="" src="../../images/backgroundperfil.jpg">
+                        </div>
+                        <a href="#!user"><img class="circle" src="../../images/perfil.png"></a>
+                        <a href="#!name"><span class="black-text name">John Doe</span></a>
+                        <a href="#!email"><span class="black-text email">correoelectronico@gmail.com</span></a>
+                    </div>
+                </li>
+                <li class="no-padding active">
+                    <a href="familia.html" class="waves-effect waves-grey ">
+                        <i class="material-icons">group</i>Familias
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="inner-main">
+            <aside id="left-side-menu">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="no-padding active">
+                        <a href="familia.html" class="waves-effect waves-grey ">
+                            <i class="material-icons">group</i>Familias
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <article>
+                <div class="conten-body">
+                    <div class="card-panel">
+                        <div class="card-title">
+                            <center>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <form method="post" action="" id="register-cedulado" class="col s12" autocomplete="off">
+                                            <div>
+                                                <div class="row">
+                                                    <div class="input-field col s8">
+                                                        <input type="text" id="form_username_mom" name="form[username_mom]" autocomplete="off" class="uppercase" maxlength="10">
+                                                        <label class="" for="form_username_mom">Cédula de la Madre/Padre</label>
+                                                    </div>
+
+                                                    <div class="input-field col s12">
+                                                        <input type="text" id="form_nombre" name="form[nombre]" autocomplete="off" class="" maxlength="30">
+                                                        <label class="" for="form_nombre">Nombres</label>
+                                                    </div>
+
+                                                    <div class="input-field col s12">
+                                                        <input type="text" id="form_apellido" name="form[apellido]" autocomplete="off" class="" maxlength="30">
+                                                        <label class="" for="form_apellido">Apellidos</label>
+                                                    </div>
+
+                                                </div>
+
+                                                    <div class="input-field col s6">
+                                                        <input type="text" class="datepicker" id="fecha">
+                                                        <label for="fecha">Fecha de Nacimiento</label>                            
+                                                    </div>
+
+                                                    <div class="input-field col s6">
+                                                        <div class="select-wrapper initialized">
+                                                            <span class="caret">▼</span>
+                                                            <input type="text" class="select-dropdown" readonly="true" data-activates="datasex" value="Seleccione">
+                                                            <ul id="datasex" class="dropdown-content select-dropdown ">
+                                                                <li class=""><span>Seleccione</span></li>
+                                                                <li class=""><span>Femenino</span></li>
+                                                                <li class=""><span>Masculino</span></li>
+                                                            </ul>
+                                                            <select id="form_sex" name="form[sex]" data-select-id="id_datasex" class="initialized">
+                                                                <option value="">Seleccione</option>
+                                                                <option value="F">Femenino</option>
+                                                                <option value="M">Masculino</option>
+                                                            </select>
+                                                        </div>
+                                                        <label class="" for="form_sex">Sexo</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row row-end">
+                                                    <div class="col s12">
+                                                        <a title="Si recibí la caja o bolsa de CLAP" class="btn btn-first" href="../familia.html">Registrar</a>
+                                                        <a title="No recibí la caja o bolsa de CLAP" class="btn grey" href="../familia.html">Cancelar</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+        <div class="clearfix"></div>
+    </main>
+</body>
+
+
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.maskMoney.min.js"></script>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('.button-collapse').sideNav();
+        });
+    </script>
+    
+
+    
+
+<div class="hiddendiv common"></div><div class="drag-target" data-sidenav="mobile-menu" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>

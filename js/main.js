@@ -43,6 +43,16 @@ $(document).ready(function () {
             }
         }
     });
+    
+    $('#form_username_mom').on('input', function (e) {
+        var username = $(this).val();
+        if (username.length > 9) {
+            var cedula = username.substring(2);
+            if (cedula > 80000000) {
+                $(this).val('E-' + cedula);
+            }
+        }
+    });
 
     $(".button-collapse").click(function () {
         $('#slide-out').toggleClass("hide-on-med-and-down");
@@ -80,6 +90,7 @@ $(document).ready(function () {
 
 
     $('#form_username').mask('C-19999999', options);
+    $('#form_username_mom').mask('C-19999999', options);
     $('#form_cell').mask('(0000)-0000000', options);
     $('#form_hab').mask('(0000)-0000000', options);
     $('#form_ofic').mask('(0000)-0000000', options);

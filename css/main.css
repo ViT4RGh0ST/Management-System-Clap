@@ -1386,10 +1386,19 @@ table tbody td.adjusted-size a {
     height: auto;
     box-shadow: none;
     border-radius: 0;
+    background-color: #D21F1F;
 }
+
 
 .btn-first {
     margin-right: 10px;
+}
+
+.btn:focus, .btn-large:focus, .btn-floating:focus{
+    background-color: #AB1D1D
+}
+.btn:hover, .btn-large:hover{
+    background-color: #AB1D1D
 }
 
 /* Panels */
