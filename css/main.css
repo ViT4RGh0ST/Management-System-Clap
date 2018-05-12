@@ -1405,7 +1405,7 @@ table tbody td.adjusted-size a {
 .card-panel {
     box-shadow: none;
     border: 1px solid #E3E4E8;
-    padding: 30px 20px;
+    padding: 30px 30px 50px 20px;
     margin-bottom: 20px !important;
 }
 
